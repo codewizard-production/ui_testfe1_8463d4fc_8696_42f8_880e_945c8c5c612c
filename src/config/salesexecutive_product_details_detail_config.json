@@ -1,0 +1,68 @@
+{
+
+"salesexecutive": [
+    {
+        "key": "ExecId",
+        "type": "keyid",
+        "UIComponentTitle": "SalesExecutive"
+    }
+        ,{
+        "key": "Name",
+        "label": "Name",
+        "type": "text",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "ContactNumber",
+        "label": "ContactNumber",
+        "type": "text",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "Address",
+        "label": "Address",
+        "type": "text",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "Attribute5",
+        "label": "Attribute5",
+        "type": "text",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "Attribute1",
+        "label": "Attribute1",
+        "type": "text",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "CreatedDate",
+        "label": "CreatedDate",
+        "type": "datetime",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "SEPhoto",
+        "label": "SEPhoto",
+        "type": "doc",
+        "accept": ".JPG,.JPEG,.PNG,.PDF,.TXT,.DOC,.DOCX,.XLS,.XLSX",
+        "width": "30%",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+]
+}

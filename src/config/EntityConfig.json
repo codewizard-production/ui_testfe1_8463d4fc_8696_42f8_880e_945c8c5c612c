@@ -1,0 +1,651 @@
+{
+        "incentive": [
+                        {
+                            "key": "IncentiveId",
+                            "type": "keyid"
+                        },
+                        {
+                            "key": "Amount",
+                            "label": "Amount",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Edm.Decimal",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "Amount is required"
+                            ]
+                        },
+                        {
+                            "key": "CreatedDate",
+                            "label": "CreatedDate",
+                            "type": "dropdown",
+                                "valueId": "Value",
+                                "nameId": "Name",
+                                "contentId": "Name",
+                                "source": "Edm.DateTimeOffset",
+                                "editable": true,
+                                "validators": [
+                                    "required",
+                                    "isNumber"
+                                ],
+                                "validationMessages": [
+                                    "CreatedDate is required"
+                                ]
+                            }
+        ]
+,        "agent": [
+                        {
+                            "key": "AgentID",
+                            "type": "keyid"
+                        },
+                        {
+                            "key": "Name",
+                            "label": "Name",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Name is required"
+                            ]
+                        },
+                        {
+                            "key": "ContactNumber",
+                            "label": "ContactNumber",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "ContactNumber is required"
+                            ]
+                        },
+                        {
+                            "key": "Address",
+                            "label": "Address",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Address is required"
+                            ]
+                        },
+                        {
+                            "key": "LoanTypes",
+                            "label": "LoanTypes",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Model.LoanType",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "LoanTypes is required"
+                            ]
+                        },
+                        {
+                            "key": "AadhaarNumber",
+                            "label": "AadhaarNumber",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "AadhaarNumber is required"
+                            ]
+                        },
+                        {
+                            "key": "AadhaarStatus",
+                            "label": "AadhaarStatus",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Model.AadhaarStatus",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "AadhaarStatus is required"
+                            ]
+                        },
+                                                {
+                            "key": "IsApproved",
+                            "label": "IsApproved",
+                            "type": "check",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "IsApproved is required"
+                            ]
+                        },
+                        {
+                            "key": "Attribute1",
+                            "label": "Attribute1",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Attribute1 is required"
+                            ]
+                        },
+                        {
+                            "key": "Attribute2",
+                            "label": "Attribute2",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Attribute2 is required"
+                            ]
+                        },
+                        {
+                            "key": "CreatedDate",
+                            "label": "CreatedDate",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Edm.DateTimeOffset",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "CreatedDate is required"
+                            ]
+                        },
+                    {
+                        "key": "AgentAgentUser",
+                        "type": "keyid"
+                    },
+                                    {
+                        "key": "AgentLeads",
+                        "type": "keyid"
+                    },
+                                    {
+                        "key": "AgentPhoto",
+                        "type": "keyid"
+                    },
+                    {
+                        "key": "Photo",
+                        "label": "Photo",
+                        "width": "30%",
+                        "type": "doc",
+                        "accept": ".JPG,.JPEG,.PNG",
+                        "editable": true,
+                        "validators": [
+                            "required"
+                        ],
+                        "validationMessages": [
+                            "Agent Photo is required"
+                        ]
+                    },
+                                    {
+                        "key": "AgentKYCDocs",
+                        "type": "keyid"
+                    },
+                    {
+                        "key": "KYCDocs",
+                        "label": "KYCDocs",
+                        "width": "30%",
+                        "type": "doc",
+                        "accept": ".JPG,.JPEG,.PNG",
+                        "editable": true,
+                        "multiple": true,
+                        "validators": [
+                            "required"
+                        ],
+                        "validationMessages": [
+                            "Agent KYCDocs is required"
+                        ]
+                    }
+                        ]
+,        "user": [
+                        {
+                            "key": "UserName",
+                            "type": "keyid"
+                        },
+                        {
+                            "key": "Attribute2",
+                            "label": "Attribute2",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Attribute2 is required"
+                            ]
+                        },
+                        {
+                            "key": "Attribute3",
+                            "label": "Attribute3",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Attribute3 is required"
+                            ]
+                        },
+                        {
+                            "key": "Attribute4",
+                            "label": "Attribute4",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Attribute4 is required"
+                            ]
+                        },
+                        {
+                            "key": "Attribute5",
+                            "label": "Attribute5",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Attribute5 is required"
+                            ]
+                        },
+                        {
+                            "key": "CreatedDate",
+                            "label": "CreatedDate",
+                            "type": "dropdown",
+                                "valueId": "Value",
+                                "nameId": "Name",
+                                "contentId": "Name",
+                                "source": "Edm.DateTimeOffset",
+                                "editable": true,
+                                "validators": [
+                                    "required",
+                                    "isNumber"
+                                ],
+                                "validationMessages": [
+                                    "CreatedDate is required"
+                                ]
+                            }
+        ]
+,        "incentiveseexec": [
+                        {
+                            "key": "IncentiveSEId",
+                            "type": "keyid"
+                        },
+                        {
+                            "key": "Amount",
+                            "label": "Amount",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Edm.Decimal",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "Amount is required"
+                            ]
+                        },
+                        {
+                            "key": "Date",
+                            "label": "Date",
+                            "type": "dropdown",
+                                "valueId": "Value",
+                                "nameId": "Name",
+                                "contentId": "Name",
+                                "source": "Edm.DateTimeOffset",
+                                "editable": true,
+                                "validators": [
+                                    "required",
+                                    "isNumber"
+                                ],
+                                "validationMessages": [
+                                    "Date is required"
+                                ]
+                            }
+        ]
+,        "lead": [
+                        {
+                            "key": "LeadId",
+                            "type": "keyid"
+                        },
+                        {
+                            "key": "ContactNumber",
+                            "label": "ContactNumber",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "ContactNumber is required"
+                            ]
+                        },
+                        {
+                            "key": "Name",
+                            "label": "Name",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Name is required"
+                            ]
+                        },
+                        {
+                            "key": "Address",
+                            "label": "Address",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Address is required"
+                            ]
+                        },
+                        {
+                            "key": "LoanType",
+                            "label": "LoanType",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Model.LoanType",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "LoanType is required"
+                            ]
+                        },
+                        {
+                            "key": "Attribute1",
+                            "label": "Attribute1",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Attribute1 is required"
+                            ]
+                        },
+                        {
+                            "key": "Attribute2",
+                            "label": "Attribute2",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Attribute2 is required"
+                            ]
+                        },
+                        {
+                            "key": "CreatedDate",
+                            "label": "CreatedDate",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Edm.DateTimeOffset",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "CreatedDate is required"
+                            ]
+                        },
+                                                {
+                            "key": "ConversionStatus",
+                            "label": "ConversionStatus",
+                            "type": "check",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "ConversionStatus is required"
+                            ]
+                        },
+                        {
+                            "key": "SalesAmount",
+                            "label": "SalesAmount",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Edm.Decimal",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "SalesAmount is required"
+                            ]
+                        },
+                    {
+                        "key": "LeadGeneratedBy",
+                        "type": "keyid"
+                    },
+                                    {
+                        "key": "LeadAssignedExecutive",
+                        "type": "keyid"
+                    },
+                                    {
+                        "key": "LeadAgentIncentive",
+                        "type": "keyid"
+                    },
+                                    {
+                        "key": "LeadSEExecIncentive",
+                        "type": "keyid"
+                    }  
+                        ]
+,        "houser": [
+                        {
+                            "key": "HoUserId",
+                            "type": "keyid"
+                        },
+                        {
+                            "key": "Name",
+                            "label": "Name",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Name is required"
+                            ]
+                        },
+                        {
+                            "key": "Attribute3",
+                            "label": "Attribute3",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Attribute3 is required"
+                            ]
+                        },
+                        {
+                            "key": "Attribute1",
+                            "label": "Attribute1",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Attribute1 is required"
+                            ]
+                        },
+                        {
+                            "key": "Attribute2",
+                            "label": "Attribute2",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Attribute2 is required"
+                            ]
+                        },
+                    {
+                        "key": "HOUserHeadOffice",
+                        "type": "keyid"
+                    }  
+                        ]
+,        "salesexecutive": [
+                        {
+                            "key": "ExecId",
+                            "type": "keyid"
+                        },
+                        {
+                            "key": "Name",
+                            "label": "Name",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Name is required"
+                            ]
+                        },
+                        {
+                            "key": "ContactNumber",
+                            "label": "ContactNumber",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "ContactNumber is required"
+                            ]
+                        },
+                        {
+                            "key": "Address",
+                            "label": "Address",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Address is required"
+                            ]
+                        },
+                        {
+                            "key": "Attribute5",
+                            "label": "Attribute5",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Attribute5 is required"
+                            ]
+                        },
+                        {
+                            "key": "Attribute1",
+                            "label": "Attribute1",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Attribute1 is required"
+                            ]
+                        },
+                        {
+                            "key": "CreatedDate",
+                            "label": "CreatedDate",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Edm.DateTimeOffset",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "CreatedDate is required"
+                            ]
+                        },
+                    {
+                        "key": "SalesExecutiveSEUser",
+                        "type": "keyid"
+                    },
+                                    {
+                        "key": "SalesExecutiveSELeads",
+                        "type": "keyid"
+                    },
+                                    {
+                        "key": "SalesExecutiveSEPhoto",
+                        "type": "keyid"
+                    },
+                    {
+                        "key": "SEPhoto",
+                        "label": "SEPhoto",
+                        "width": "30%",
+                        "type": "doc",
+                        "accept": ".JPG,.JPEG,.PNG",
+                        "editable": true,
+                        "validators": [
+                            "required"
+                        ],
+                        "validationMessages": [
+                            "SalesExecutive SEPhoto is required"
+                        ]
+                    }
+                        ]
+}
